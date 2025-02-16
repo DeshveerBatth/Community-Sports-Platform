@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Football Tournament</title>
+  <link rel="stylesheet" href="styless.css">
+  <script src="football-event.js"></script>
+
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Sports Platform</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#">Dashboard</a>
+      <a href="#">Login</a>
+      <a href="#">Register</a>
+    </nav>
+  </header>
+
+  <!-- Event Details -->
+  <section class="event-details">
+    <h1>Football Tournament</h1>
+    <p>Date: 15th January 2024</p>
+    <p>Time: 10:00 AM - 2:00 PM</p>
+    <p>Location: Community Sports Ground</p>
+    <p>Description: Join us for an action-packed football tournament featuring local teams. Show your support and enjoy the thrill!</p>
+    <button onclick="alert('You have joined the Football Tournament!')">Join Now</button>
+  </section>
+
+  <!-- Registration Form -->
+  <section class="registration">
+    <h2>Register for Football Tournament</h2>
+    <form id="football-registration-form">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+      <label for="team">Team Name (Optional)</label>
+      <input type="text" id="team" name="team" placeholder="Enter your team name">
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Participants Section -->
+  <section class="participants">
+    <h2>Participants</h2>
+    <ul id="participant-list">
+      <!-- Dynamically populated list -->
+    </ul>
+  </section>
+
+  
+</body>
+</html>

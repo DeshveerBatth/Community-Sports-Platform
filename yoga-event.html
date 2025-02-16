@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yoga Workshop</title>
+  <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Sports Platform</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#">Dashboard</a>
+      <a href="#">Login</a>
+      <a href="#">Register</a>
+    </nav>
+  </header>
+
+  <!-- Event Details -->
+  <section class="event-details">
+    <h1>Yoga Workshop</h1>
+    <p>Date: 20th January 2024</p>
+    <p>Time: 8:00 AM - 11:00 AM</p>
+    <p>Location: Community Wellness Center</p>
+    <p>Description: Experience a rejuvenating yoga session led by expert instructors. Open to all skill levels!</p>
+    <button onclick="alert('You have joined the Yoga Workshop!')">Join Now</button>
+  </section>
+
+  <!-- Registration Form -->
+  <section class="registration">
+    <h2>Register for Yoga Workshop</h2>
+    <form id="yoga-registration-form">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+      <label for="experience">Yoga Experience (Optional)</label>
+      <input type="text" id="experience" name="experience" placeholder="Beginner, Intermediate, Advanced">
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Participants Section -->
+  <section class="participants">
+    <h2>Participants</h2>
+    <ul id="participant-list">
+      <!-- Dynamically populated list -->
+    </ul>
+  </section>
+
+  <script>
+    const form = document.getElementById('yoga-registration-form');
+    const participantList = document.getElementById('participant-list');
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value;
+
+      const participant = document.createElement('li');
+      participant.textContent = `${name} - ${email} - ${phone}`;
+      participantList.appendChild(participant);
+
+      form.reset();
+      alert('Thank you for registering!');
+    });
+  </script>
+</body>
+</html>

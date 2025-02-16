@@ -1,0 +1,136 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  h1, h2 {
+    color: #333;
+  }
+  
+  p {
+    margin: 10px 0;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  .navbar nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .navbar nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Event Details */
+  .event-details {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .event-details h1 {
+    font-size: 2.5em;
+    color: #007bff;
+  }
+  
+  .event-details p {
+    font-size: 1.2em;
+    margin: 5px 0;
+  }
+  
+  /* Registration Form */
+  .registration {
+    text-align: center;
+    padding: 30px;
+    background-color: #fff;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .registration h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #007bff;
+  }
+  
+  .registration form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .registration label {
+    margin: 15px 0 5px;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  .registration input {
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 90%;
+    font-size: 1.1em;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .registration input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .registration button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+  }
+  
+  .registration button:hover {
+    background-color: #218838;
+  }
+  
+  /* Participants Section */
+  .participants {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .participants ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .participants li {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #555;
+  }
+  

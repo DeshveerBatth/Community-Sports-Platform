@@ -1,0 +1,204 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #007bff, #0056b3);
+  color: white;
+  padding: 15px 20px;
+}
+
+.navbar .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.navbar nav a {
+  margin: 0 15px;
+  font-weight: bold;
+  color: white;
+  transition: color 0.3s;
+}
+
+.navbar nav a:hover {
+  color: #ffd700;
+}
+
+/* Hero Section */
+.hero {
+  background: url('banner.jpg') center center no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  height: 200px;
+  display: flex;
+  align-items: center; /* Vertically center text */
+  justify-content: center; /* Horizontally center text */
+  flex-direction: column; /* Ensures text stacks properly */
+}
+
+
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hero p {
+  font-size: 1.5em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Suggestions Section */
+.suggestions {
+  padding: 30px;
+  background-color: #f4f4f4;
+}
+
+.suggestions h2 {
+  text-align: center;
+  color: #007bff;
+}
+
+.suggestion-box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.suggestion {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.suggestion:hover {
+  transform: translateY(-5px);
+}
+
+/* Events Section */
+.events {
+  padding: 30px;
+}
+
+.events h2 {
+  text-align: center;
+  color: #007bff;
+}
+
+.event-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.event-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.event-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.event-card h3 {
+  color: #333;
+  margin: 10px 0;
+}
+
+.event-card button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.event-card button:hover {
+  background-color: #218838;
+}
+
+/* Contact Section */
+.contact {
+  padding: 30px;
+  background-color: #f9f9f9;
+  text-align: center;
+  border-top: 2px solid #007bff;
+}
+
+.contact h2 {
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 1.2em;
+  color: #333;
+}
+
+.contact a {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.contact a:hover {
+  color: #0056b3;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.footer .social-links a {
+  color: #ffd700;
+  margin: 0 5px;
+}
+
+.footer .social-links a:hover {
+  color: white;
+}
